@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0px 2px 4px rgba(0, 0, 1, 0.25);
+}
+
+body {
+    font-family: "Sora", serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6, .display-4 {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.navbar .nav-link {
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.hero {
+    background-image: url("/img/_backgrounds_003.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 1, 0.5);
+    transition-duration: 0.5s;
+    transform: scale(1.02);
+}
+
+.col-img {
+    background-image: url("/img/060.JPG");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.profile{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.profile_container{
+    padding: 10px 64px;
+    position: relative;
+    width: 50%;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: rgba(160, 200, 240, 0.2);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15PX;
+}
+
+.text-box h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.profile img {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgba(80, 80, 80, 0.75);
+    right: -36px;
+    top: 28px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -36px;
+}
+
+.profile::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: rgba(65, 65, 65, 0.5);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgba(160, 200, 240, 0.2);;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgba(160, 200, 240, 0.2);;
+    left: -15px;
+}
+
+.blog img {
+    width: auto;
+    height: 200px;
+    padding: 0em 0em 1em;
+}
+
+.blog h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgba(150, 150, 150, 0.8);
+}
+
+.blog h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(150, 150, 150, 0.95);
+}
